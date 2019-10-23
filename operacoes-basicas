@@ -23,6 +23,14 @@ return resultado;
 
 }
 
+float divisao( float N1, float N2){
+
+float resultado;
+resultado = N1 / N2;
+return resultado;
+
+}
+
 int main()
 {
     float x, y, resultado;
@@ -60,6 +68,10 @@ int main()
 
         break;
         case 4:
+
+            resultado = divisao(x,y);
+            printf("\nResultado da divisao: %.1f", resultado);
+
         break;
         default:
         break;
