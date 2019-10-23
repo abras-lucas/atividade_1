@@ -1,0 +1,82 @@
+#include <stdio.h>
+float soma( float N1, float N2){
+
+float resultado;
+resultado = N1 + N2;
+return resultado;
+
+}
+
+float subtracao( float N1, float N2){
+
+float resultado;
+resultado = N1 - N2;
+return resultado;
+
+}
+
+float multiplicacao( float N1, float N2){
+
+float resultado;
+resultado = N1 * N2;
+return resultado;
+
+}
+
+float divisao( float N1, float N2){
+
+float resultado;
+resultado = N1 / N2;
+return resultado;
+
+}
+
+int main()
+{
+    float x, y, resultado;
+    int opcao = 1;
+
+    printf("Bem-vindo!!!");
+    printf("\nInsira o primeiro numero:");
+    scanf("%f", &x);
+    printf("Insira o segundo numero:");
+    scanf("%f", &y);
+
+    printf("Qual operacao deseja realizar?\n");
+    printf("1 - Soma\n 2 - Subtracao\n 3 - Multiplicacao\n 4 - Divisao\n");
+    printf("Opcao: ");
+    scanf("%i", &opcao);
+
+    switch(opcao){
+
+        case 1:
+
+            resultado = soma(x,y);
+            printf("\nResultado da soma: %.1f", resultado);
+
+        break;
+        case 2:
+
+            resultado = subtracao(x,y);
+            printf("\nResultado da subtracao: %.1f", resultado);
+
+        break;
+        case 3:
+
+            resultado = multiplicacao(x,y);
+            printf("\nResultado da multiplicacao: %.1f", resultado);
+
+        break;
+        case 4:
+
+            resultado = divisao(x,y);
+            printf("\nResultado da divisao: %.1f", resultado);
+
+        break;
+        default:
+        break;
+
+    }
+
+    return 0;
+}
