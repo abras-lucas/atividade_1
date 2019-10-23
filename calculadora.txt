@@ -1,4 +1,13 @@
 #include <stdio.h>
+#include <math.h>
+
+float exponenciacao( float N1, float N2){
+
+float resultado;
+resultado = pow(N1, N2);
+return resultado;
+
+}
 
 int main()
 {
@@ -14,7 +23,7 @@ int main()
     while(opcao != 0){
         
         printf("Qual operacao deseja realizar?\n");
-        printf("1 - Soma\n 2 - Subtracao\n 3 - Multiplicacao\n 4 - Divisao\n");
+        printf("1 - Soma\n 2 - Subtracao\n 3 - Multiplicacao\n 4 - Divisao\n  5 - Exponeciacao\n");
         printf("Opcao: ");
         scanf("%i", &opcao);
         
@@ -27,6 +36,12 @@ int main()
             case 3:
             break;
             case 4:
+            break;
+            case 5:
+             
+            resultado = exponenciacao(x,y);
+            printf("\nResultado da exponenciacao: %.1f", resultado);
+
             break;
             default:
             break;
